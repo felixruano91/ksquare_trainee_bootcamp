@@ -50,7 +50,7 @@ logAsArray(1, 2, 3, 4, 5); // [1,2,3,4,5]
 // the array
 function logArray(nums) {
   nums.forEach(nums => {
-    console.log(nums)
+    console.log(nums);
   });
 }
 
@@ -72,21 +72,20 @@ function Car(brand, model, year) {
   this.year = year;
 }
 
-var teslaS = new Car('Tesla', 'Model S', '2019');
+var teslaS = new Car("Tesla", "Model S", "2019");
 console.log(teslaS);
 
 // Let calculateRectanglePerimenter be a function
 // returns the perimeter when its applied to
 // a rectangle object.
 function calculateRectanglePerimeter() {
-  return console.log(this.height * 2 + this.width * 2)
+  return console.log(this.height * 2 + this.width * 2);
 }
 
 calculateRectanglePerimeter.apply({
   height: 2,
   width: 2
 }); // 8
-
 
 // Write a function called calculateCirclePerimeter
 // and create another function called boundCalculateCirclePerimeter
@@ -108,7 +107,12 @@ boundCalculateCirclePerimeter(); // ~ 12.56
 // takes a string as an argument and
 // returns it reversed
 function reverseString(str) {
-  return console.log(str.split("").reverse().join(""));
+  return console.log(
+    str
+      .split("")
+      .reverse()
+      .join("")
+  );
 }
 
 reverseString("hola"); // aloh
@@ -117,7 +121,12 @@ reverseString("hola"); // aloh
 // takes a string as an argument and
 // returns it sorted alphabetically
 function sortString(str) {
-  return console.log(str.split('').sort().join(''));
+  return console.log(
+    str
+      .split("")
+      .sort()
+      .join("")
+  );
 }
 
 sortString("david"); // 'addiv'
@@ -127,13 +136,25 @@ sortString("david"); // 'addiv'
 // return true if one is the palindrome
 // of the other returns returns false otherwise
 function arePalindromes(a, b) {
-  const palA = a.split('').join('').split('').sort('').join('');
-  const palB = b.split('').join('').split('').sort('').join('');
-  return palA == palB;
-  //a = a.split('').reverse('').join('');
-  //return console.log(a === b);
+  //const palA = a.split('').join('').split('').sort('').join('');
+  //const palB = b.split('').join('').split('').sort('').join('');
+  //return palA == palB;
+  a = a
+    .split("")
+    .reverse("")
+    .join("");
+  return console.log(a === b);
 }
 
 arePalindromes("anita lava la tina", "anit al aval atina"); // true
 arePalindromes("avid", "diva"); // true
 arePalindromes("juan", "jose"); // false
+
+class Person {
+  constructor(name, age, sex) {
+    (this.name = name), (this.age = age), (this.sex = sex);
+  }
+}
+
+const felix = new Person("Felix", 20, "Male");
+console.log(felix);
