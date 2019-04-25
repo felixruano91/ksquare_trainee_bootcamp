@@ -3,8 +3,8 @@
  */
 .header {
   background-color: #fff;
-  border-top: 0.375rem solid #01efad;
   border-bottom: 0.125rem solid #d9d9d9;
+  border-top: 0.375rem solid #01efad;
 }
 .header__container {
   box-sizing: border-box;
@@ -61,8 +61,8 @@
  */
 .header-project__container {
   box-sizing: border-box;
-  padding-top: 2rem;
   padding-left: 1rem;
+  padding-top: 2rem;
   width: 100%;
 }
 .header-project__title {
@@ -73,22 +73,23 @@
  * Project card Component
  */
 .card__projectCard {
-  box-sizing: border-box;
   background-color: #f8f7fd;
-  padding: 1rem;
+  box-sizing: border-box;
   margin: 1rem 1rem;
+  padding: 1rem;
 }
 .card__title {
   font-family: arial;
 }
 .card__description {
-  font-family: arial;
   color: #4f5162;
+  font-family: arial;
 }
 .card__button {
-  font-family: arial;
   background-color: #7754e2;
+  border: none;
   color: #fff;
+  font-family: arial;
   padding: 1rem;
   text-align: center;
   width: 100%;
@@ -100,8 +101,8 @@
   border-bottom: 0.375rem solid #01efad;
 }
 .message__container {
-  box-sizing: border-box;
   background-color: #f7fdfd;
+  box-sizing: border-box;
   padding: 2rem 1rem;
 }
 .message__title {
@@ -110,14 +111,15 @@
   text-align: center;
 }
 .message__description {
-  font-family: arial;
   color: #4f5162;
+  font-family: arial;
   text-align: center;
 }
 .message__button {
-  font-family: arial;
   background-color: #01efad;
+  border: none;
   color: #fff;
+  font-family: arial;
   padding: 1rem 1rem;
   text-align: center;
   width: 100%;
@@ -126,13 +128,13 @@
  * Project card Component
  */
 .rights__container {
-  box-sizing: border-box;
   background-color: $background_green;
+  box-sizing: border-box;
   padding: 2rem 1rem;
 }
 .rights__title {
-  font-family: arial;
   color: #4f5162;
+  font-family: arial;
   margin: 0;
   text-align: center;
 }
