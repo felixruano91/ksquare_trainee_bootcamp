@@ -1,0 +1,17 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+
+.header-project
+    &__container
+        box-sizing: border-box
+        padding-left: $normal_padding
+        padding-top: $double_padding
+        width: 100%
+    &__title
+        color: $border_green
+        font-family: $text_font
+
+@media screen and (min-width: $tablet_width)
+    .header-project
+        &__title
+            text-align: center

@@ -19,5 +19,9 @@
     "gulp-stylus": "^2.7.0",
     "pug": "^2.0.3",
     "stylus": "^0.54.5"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^4.2.0",
+    "yarn": "^1.15.2"
   }
 }

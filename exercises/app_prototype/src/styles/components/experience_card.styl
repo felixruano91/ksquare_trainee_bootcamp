@@ -1,0 +1,40 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+
+.experienceCard  
+    &__link
+        color: $border_green
+        font-family: arial
+        text-decoration: none
+        &:hover
+            cursor: pointer
+    &__card
+        border: solid 1px grey
+        box-sizing: border-box
+        margin: $normal_margin $normal_margin
+        padding: $normal_padding
+        
+    &__project
+        color: $text_color
+        font-family: arial
+        margin-bottom: 0
+    &__description
+        color: $text_color
+        font-family: arial
+        margin-bottom: 0
+    &__duration
+        color: $text_color
+        font-family: arial
+        font-size: 0.9rem
+
+/**
+ * Tablet Styles
+ */
+@media screen and (min-width: $tablet_width)
+    .experienceCard 
+        display: flex
+        justify-content: space-evenly 
+        &__projectCard
+            display: inline-block
+            width: 30%
+            margin: 0

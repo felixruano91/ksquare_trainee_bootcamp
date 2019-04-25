@@ -6,8 +6,6 @@
     &__container
         background-color: $background_gray
         box-sizing: border-box
-        display: flex
-        justify-content: space-evenly
         padding: $double_padding $normal_padding
         width: 100%
     
@@ -17,10 +15,26 @@
         width: 4rem
 
         &:first-child
-            background-color: $circle_purple
+            background-image: url(./images/rx.png)
 
         &:nth-child(2)
-            background-color: $circle_orange
+            background-image: url(./images/js.png)
 
         &:last-child
-            background-color: $circle_green
+            background-image: url(./images/rn.png)
+
+    &__title
+        display: block
+        color: $background_purple
+        font-family: $text_font
+    &__box
+        display: flex
+        justify-content: space-evenly
+
+/**
+ * Tablet Styles
+ */
+@media screen and (min-width: $tablet_width)
+    .skills
+        &__title
+            text-align: center

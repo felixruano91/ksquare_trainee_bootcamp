@@ -20,3 +20,14 @@
         padding: $normal_padding 
         text-align: center
         width: 100%
+
+@media screen and (min-width: $tablet_width)
+    .card 
+        display: flex
+        justify-content: space-evenly 
+        &__projectCard
+            display: inline-block
+            width: 30%
+            margin: 0
+        &__button
+            align-items: baseline

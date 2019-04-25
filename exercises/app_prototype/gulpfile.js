@@ -1,7 +1,7 @@
 const { series, watch } = require("gulp");
 const pug = require("gulp-pug");
 const stylus = require("gulp-stylus");
-var gulpCopy = require("gulp-copy");
+const cleanCSS = require("gulp-clean-css");
 const gulp = require("gulp");
 
 /**
@@ -26,6 +26,17 @@ function devCss() {
     .src("src/styles/*.styl")
     .pipe(stylus())
     .pipe(gulp.dest("public"));
+}
+
+function copyCss() {
+  return gulp
+    .src("src/normalize.css")
+    .pipe(cleanCSS({ compatibility: "ie8" }))
+    .pipe(gulp.dest("public/vendor/"));
+}
+
+function copyImages() {
+  return gulp.src("src/images/*.*").pipe(gulp.dest("public/images/"));
 }
 
 /**
@@ -55,6 +66,6 @@ function prodCss() {
     .pipe(gulp.dest("public"));
 }
 
-exports.build = series(prodHtml, prodCss);
+exports.build = series(copyCss, copyImages, prodHtml, prodCss);
 
-exports.default = series(devHtml, devCss, devWatch);
+exports.default = series(copyCss, copyImages, devHtml, devCss, devWatch);
