@@ -44,16 +44,17 @@
 }
 .skills__item {
   border-radius: 100%;
+  margin: 0 auto;
   height: 4rem;
   width: 4rem;
 }
-.skills__item:first-child {
+.skills__item#rx {
   background-image: url("./images/rx.png");
 }
-.skills__item:nth-child(2) {
+.skills__item#js {
   background-image: url("./images/js.png");
 }
-.skills__item:last-child {
+.skills__item#rn {
   background-image: url("./images/rn.png");
 }
 .skills__title {
@@ -120,17 +121,6 @@
   font-family: arial;
   font-size: 0.9rem;
 }
-@media screen and (min-width: 768px) {
-  .experienceCard {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .experienceCard__projectCard {
-    display: inline-block;
-    width: 30%;
-    margin: 0;
-  }
-}
 /**
  * Project Header Component
  */
@@ -150,7 +140,7 @@
 .card__projectCard {
   background-color: #f8f7fd;
   box-sizing: border-box;
-  margin: 1rem 1rem;
+  margin: 1rem;
   padding: 1rem;
 }
 .card__title {
@@ -168,20 +158,6 @@
   padding: 1rem;
   text-align: center;
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .card {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .card__projectCard {
-    display: inline-block;
-    width: 30%;
-    margin: 0;
-  }
-  .card__button {
-    align-items: baseline;
-  }
 }
 /**
  * Project card Component

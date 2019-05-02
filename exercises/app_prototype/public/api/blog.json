@@ -1,0 +1,9 @@
+{
+    "blog_posts": [{
+        "id": "1",
+        "title": "Node.js Firts Steps",
+        "publication_date": 1556552130239,
+        "link": "http://some-url.com",
+        "background_image": "../images/blog-bg.png"
+    }]
+}

@@ -22,6 +22,8 @@
   },
   "dependencies": {
     "gulp-clean-css": "^4.2.0",
+    "gulp-server-livereload": "^1.9.2",
+    "isomorphic-fetch": "^2.2.1",
     "yarn": "^1.15.2"
   }
 }

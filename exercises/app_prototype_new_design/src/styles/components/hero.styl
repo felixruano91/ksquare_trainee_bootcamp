@@ -1,0 +1,89 @@
+@require '../base/units.styl'
+@require '../base/colors.styl'
+
+.hero 
+    background-image: url(./images/image.png)
+    background-repeat: no-repeat
+    background-size: 100vw 50vw
+    background-position: top center
+
+    
+    // &__arrow
+    //     background-color: $dark_blue
+    //     height: 83vw
+    //     width: 84vw
+    //     position: absolute
+    //     top: -10rem
+    //     transform: rotate(45deg)
+    //     z-index -1
+    //     border: .7rem solid $green
+
+    &__container
+        box-sizing: border-box
+        padding: $double_padding
+        width: 100%
+        position: relative
+        overflow: hidden    
+        z-index 1
+        
+    &__title
+        font-family: arial
+        font-size: 1.5rem
+        margin: 0
+        text-align: center
+        color: $grey
+    &__subtitle
+        font-family: arial
+        font-size: 1.3rem
+        margin: 0
+        text-align: center
+        font-weight: lighter
+        padding: $normal_padding
+        color: $grey
+    &__item
+        border-radius: 5%
+        margin: 0 auto
+        height: 7rem
+        width: 7rem
+        background-color: $grey
+        margin-top: 2rem
+    &__bio
+        font-family: arial
+        font-size: .8rem
+        margin: 0
+        text-align: center
+        color: $dark_blue
+        padding: $normal_padding
+
+
+
+// .ex
+//     background-color: white
+//     height: 20rem
+//     width: 100%
+//     position relative
+//     overflow hidden
+//     background-color gray
+
+//     &-bg
+//         background-color: blue
+//         height: 120vw
+//         width: 60vw
+//         right: 1rem
+//         position absolute
+//         top: -18rem
+//         transform: rotate(50deg)
+    
+//     &-picture
+//         position: absolute
+//         top: 0
+//         left: 0
+//         right: 0
+//         bottom: 0
+//         display: flex
+//         align-items: center
+//         justify-content: center
+//     &-image
+//         background-color: white
+//         height: 2rem
+//         width: 2rem

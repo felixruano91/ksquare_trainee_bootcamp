@@ -1,0 +1,61 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+
+.experienceCard  
+    background-color: $grey
+    &__item
+        border-radius: 5%
+        width: 100%
+        margin: 0 auto
+    &__linkContainer
+        text-align: right
+        padding: .5rem
+    &__link
+        color: $blue
+        font-family: $text_font
+        text-decoration: none
+        &:hover
+            cursor: pointer
+        padding-left: $normal_padding
+    &__card
+        background-color: white
+        // border: outset 3px $grey
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)
+        border-radius: 3px
+        box-sizing: border-box
+        margin: $normal_margin 
+        padding: $normal_padding
+        
+    &__project
+        color: $dark_blue
+        font-family: $text_font
+        // margin-bottom: 0
+        margin: 0 auto
+    &__position
+        color: $dark_blue
+        font-family: $text_font
+        margin-bottom: 0
+    &__duration
+        color: $dark_grey
+        font-family: $text_font
+        font-size: 0.9rem
+        font-weight: lighter
+        margin-bottom: $normal_margin
+    &__description
+        color: $dark_grey
+        font-family: $text_font
+        font-weight: lighter
+        font-size: .9rem
+        border-top: 1px solid $dark_blue
+
+/**
+ * Tablet Styles
+ */
+// @media screen and (min-width: $tablet_width)
+//     .experienceCard 
+//         display: flex
+//         justify-content: space-evenly 
+//         &__projectCard
+//             display: inline-block
+//             width: 30%
+//             margin: 0

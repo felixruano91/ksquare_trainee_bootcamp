@@ -1,0 +1,32 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+
+.skills
+    background-color: white
+    text-align: center
+    &__container
+        box-sizing: border-box
+        margin: 0 auto
+        padding: .2rem
+        width: 100% // fluid layout
+    &__title
+        color: $dark_blue
+        font-family: $text_font
+        text-align: center
+        font-weight: bold
+    &__published
+        color: $dark_blue
+        font-family: $text_font
+        text-align: center
+        font-weight: lighter
+    &__button
+        background-color: $blue
+        border: none
+        color: white
+        font-family: $text_font
+        border-radius: 5%
+        padding: 0.75rem 2.25rem
+        margin: $double_margin
+        margin-top: $normal_margin
+        &:hover
+            cursor: pointer

@@ -1,0 +1,61 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+
+.message 
+    border-top: .5rem solid $green
+    &__image
+        display: block
+        margin: 0 auto
+        width: 20%
+    &__container
+        font-family: $text_font
+        background-color: $dark_blue
+        box-sizing: border-box
+        padding: $double_padding $normal_padding
+        text-align: center
+    &__title
+        padding: $normal_padding $double_padding
+        color: white
+        line-height: 150%
+        margin-bottom: 0
+    &__description
+        text-align: center
+        color: white
+        padding: 0 $normal_padding
+        // padding-top: 0
+        font-weight: lighter
+    &__button
+        background-color: $blue
+        border: none
+        color: white
+        font-family: $text_font
+        border-radius: 5%
+        padding: 0.75rem 2.25rem
+        &:hover
+            cursor: pointer
+    &__formContainer
+        margin: 0 auto
+        padding: 0
+    &__formEmail
+        background-color: transparent
+        border: 1px solid white
+        padding-top: $normal_padding
+        padding-right: 5rem
+        padding-bottom: 1rem
+        padding-left: 1rem
+        margin: $normal_margin
+        &::placeholder
+                color: white
+                align-items: left
+    &__formMessage
+        background-color: transparent
+        border: 1px solid white
+        padding-top: $normal_padding
+        padding-right: 5rem
+        padding-bottom: 5rem
+        padding-left: 1rem
+        margin: $normal_margin
+        &::placeholder
+                color: white
+                align-items: left
+        margin-bottom: $double_margin

@@ -1,0 +1,53 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+
+.card   
+    &__projectCard
+        background-color: white
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)
+        border-radius: 3px
+        box-sizing: border-box
+        margin: $normal_margin
+        
+    &__titleContainer
+        background-color: $dark_blue
+        padding: $normal_padding
+        margin: 0 auto
+    &__title
+        font-family: $text_font
+        color: white
+        margin: 0 auto
+    &__description
+        color: $dark_grey
+        font-family: $text_font
+        font-weight: lighter
+        margin: 0 auto
+    &__button
+        background-color: $blue
+        border: none
+        color: white
+        font-family: $text_font
+        padding: .7rem
+        border-radius: 5%
+        margin-top: $double_padding
+        &:hover
+            cursor: pointer
+    &__descriptionContainer
+        padding: $normal_padding 
+        text-align: center
+    &__image
+        // width: 23.82rem
+        width: 100%
+        margin: 0 auto
+
+// @media screen and (min-width: $tablet_width)
+//     .card 
+//         display: flex
+//         justify-content: space-evenly 
+//         &__projectCard
+//             display: inline-block
+//             width: 30%
+//             margin: 0
+//         &__button
+//             align-items: baseline
+

@@ -5,7 +5,9 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
+        link(href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700", rel="stylesheet")
         link(rel="stylesheet", href="vendor/normalize.css")
+        link(rel="stylesheet", href="vendor/bootstrap-grid.css")
         link(rel="stylesheet", href="main.css")
     body
         include components/header.pug
@@ -17,5 +19,7 @@ html(lang="en")
         include components/card.pug
         include components/message.pug
         include components/blog.pug
+        script(src="./js/app.js", async="true", defer="true")
         include components/rights.pug
+        
         
